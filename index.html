@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Солнечные батареи GreenCorp</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="fa/css/all.min.css">
   <link rel="stylesheet" href="main.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -14,12 +20,12 @@
           </div>
     </header>
     <section class="about">
-      <div class="about__info">
+      <div class="about__info animate__animated animate__fadeInLeft animate__slow">
         <h1>Солнечные панели GreenRobotic</h1>
         <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
-        <button>Узнать подробнее</button>
+        <button>Узнать подробнее<i class="fas fa-angle-right"></i></button>
       </div>
-      <div class="about__images">
+      <div class="about__images animate__animated animate__fadeInRight animate__slow">
         <img class="about__sun-image" src="img/sun.png">
         <img class="about__image" src="img/solar-panel.png">
       </div>
@@ -33,24 +39,43 @@
           <form>
             <div class="form__group">
               <label for="name">Ваше имя</label>
-              <input type="text" placeholder="Введите имя" id="name"><br>
+              <input type="text" placeholder="Введите имя" id="name">
+          </div>
+          <div class="form__group">
               <label for="email">Электронный адрес</label>
-              <input id="email" type="email" placeholder="***@yandex.ru"><br>
+              <input type="email" placeholder="***@yandex.ru" id="email">
+          </div>
+          <div class="form__group">
               <label for="phone">Номер телефона</label>
-              <input id="phone" type="tel" placeholder="7 (999) 999-99-99"><br>
+              <input type="tel" placeholder="7 (999) 999-99-99" id="phone">
+          </div>
+          <div class="form__group">
               <label for="budget">Примерный бюджет</label>
               <select id="budget">
-                <option checked>Выберите вариант</option>
-                <option value="10-30">10 000₽ – 30 000₽</option>
-                <option value="30-60">30 000₽ – 60 000₽</option>
-                <option value="60-100">60 000₽ – 100 000₽</option>
-                <option value="100+">100 000₽</option>
-              </select><br>
-            </div>
-            <button class="form__submit" type="submit">Отправить заявку</button>
+                  <option>
+                    Выберите вариант
+                  </option>
+                  <option value="10 - 30">
+                    10 000₽ - 30 000₽
+                  </option>
+                  <option value="30 - 60">
+                    30 000₽ - 60 000₽
+                  </option>
+                  <option value="60 - 100">
+                    60 000₽ - 100 000₽
+                  </option>
+                  <option value="100+">
+                    100 000₽
+                  </option>
+                </select>
+          </div>
+          <button type="submit" class="form__submit">
+              Отправить заявку
+          </button>
           </form>
       </div>
     </section>
+    <script src="fa/js/all.min.js"></script>
 </body>
 <footer>
   <div class="footer__container">
